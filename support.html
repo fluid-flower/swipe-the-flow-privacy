@@ -1,219 +1,213 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Swipe the Flow Support</title>
-    <meta name="description" content="Support page for Swipe the Flow, an interactive fluid simulation app for
-  iPhone and iPad. Find contact information, app details, privacy information, and permission notes.">
-    <style>
-      :root {
-        color-scheme: light;
-        --bg: #f5f7fb;
-        --card: #ffffff;
-        --text: #111827;
-        --muted: #4b5563;
-        --border: #e5e7eb;
-        --accent: #0f766e;
-        --accent-soft: #ecfdf5;
-        --shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
-        --radius: 20px;
-        --max-width: 860px;
-      }
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swipe the Flow Support</title>
+  <meta name="description" content="Support page for Swipe the Flow, an interactive fluid simulation app for iPhone and iPad. Find contact information, app details, privacy information, and permission notes.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --accent: #0f766e;
+      --accent-soft: #ecfdf5;
+      --shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+      --radius: 20px;
+      --max-width: 860px;
+    }
 
-      * {
-        box-sizing: border-box;
-      }
+    * {
+      box-sizing: border-box;
+    }
 
-      html {
-        -webkit-text-size-adjust: 100%;
-      }
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
 
-      body {
-        margin: 0;
-        background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
-        color: var(--text);
-        font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-      }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+      color: var(--text);
+      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    }
 
-      a {
-        color: var(--accent);
-        text-underline-offset: 2px;
-      }
+    a {
+      color: var(--accent);
+      text-underline-offset: 2px;
+    }
 
-      a:hover,
-      a:focus-visible {
-        text-decoration-thickness: 2px;
-      }
+    a:hover,
+    a:focus-visible {
+      text-decoration-thickness: 2px;
+    }
 
+    .page {
+      width: min(100% - 32px, var(--max-width));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px 22px;
+    }
+
+    header.card {
+      margin-bottom: 20px;
+    }
+
+    main.card section + section {
+      margin-top: 28px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+
+    h1,
+    h2 {
+      line-height: 1.2;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      letter-spacing: -0.03em;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .lede {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 60ch;
+    }
+
+    .summary {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+
+    .panel {
+      background: #fbfdff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    @media (min-width: 720px) {
       .page {
-        width: min(100% - 32px, var(--max-width));
-        margin: 0 auto;
-        padding: 32px 0 56px;
+        width: min(100% - 48px, var(--max-width));
+        padding-top: 48px;
+        padding-bottom: 72px;
       }
 
       .card {
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        box-shadow: var(--shadow);
-        padding: 28px 22px;
-      }
-
-      header.card {
-        margin-bottom: 20px;
-      }
-
-      main.card section + section {
-        margin-top: 28px;
-        padding-top: 28px;
-        border-top: 1px solid var(--border);
-      }
-
-      h1,
-      h2 {
-        line-height: 1.2;
-        margin: 0 0 12px;
-      }
-
-      h1 {
-        font-size: clamp(2rem, 5vw, 3.25rem);
-        letter-spacing: -0.03em;
-      }
-
-      h2 {
-        font-size: 1.2rem;
-        color: var(--accent);
-      }
-
-      p {
-        margin: 0 0 12px;
-      }
-
-      .lede {
-        font-size: 1.05rem;
-        color: var(--muted);
-        max-width: 60ch;
-      }
-
-      .summary {
-        display: inline-block;
-        margin-top: 16px;
-        padding: 8px 12px;
-        border-radius: 999px;
-        background: var(--accent-soft);
-        color: var(--accent);
-        font-weight: 600;
-        font-size: 0.95rem;
+        padding: 36px 34px;
       }
 
       .grid {
-        display: grid;
-        gap: 16px;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
       }
-
-      .panel {
-        background: #fbfdff;
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 16px;
-      }
-
-      .label {
-        display: block;
-        margin-bottom: 6px;
-        color: var(--muted);
-        font-size: 0.92rem;
-        font-weight: 600;
-      }
-
-      ul {
-        margin: 0;
-        padding-left: 20px;
-      }
-
-      li + li {
-        margin-top: 8px;
-      }
-
-      footer {
-        margin-top: 18px;
-        color: var(--muted);
-        font-size: 0.95rem;
-        text-align: center;
-      }
-
-      @media (min-width: 720px) {
-        .page {
-          width: min(100% - 48px, var(--max-width));
-          padding-top: 48px;
-          padding-bottom: 72px;
-        }
-
-        .card {
-          padding: 36px 34px;
-        }
-
-        .grid {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header class="page">
-      <div class="card">
-        <h1>Swipe the Flow Support</h1>
-        <p class="lede">Swipe the Flow is an interactive fluid simulation app for iPhone and iPad that lets you
-  create flowing motion and vortex patterns with touch gestures.</p>
-        <p class="summary">No login required. No account creation required.</p>
-      </div>
-    </header>
-    <main class="page">
-      <div class="card">
-        <section aria-labelledby="contact-heading">
-          <h2 id="contact-heading">Contact Support</h2>
-          <div class="grid">
-            <div class="panel">
-              <span class="label">Support email</span>
-              <p><a href="mailto:junho4268@naver.com">junho4268@naver.com</a></p>
-            </div>
-            <div class="panel">
-              <span class="label">Privacy Policy</span>
-              <p><a href="https://fluid-flower.github.io/swipe-the-flow-privacy/">View the Swipe the Flow Privacy
-  Policy</a></p>
-            </div>
+    }
+  </style>
+</head>
+<body>
+  <header class="page">
+    <div class="card">
+      <h1>Swipe the Flow Support</h1>
+      <p class="lede">Swipe the Flow is an interactive fluid simulation app for iPhone and iPad that lets you create flowing motion and vortex patterns with touch gestures.</p>
+      <p class="summary">No login required. No account creation required.</p>
+    </div>
+  </header>
+  <main class="page">
+    <div class="card">
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Support</h2>
+        <div class="grid">
+          <div class="panel">
+            <span class="label">Support email</span>
+            <p><a href="mailto:junho4268@naver.com">junho4268@naver.com</a></p>
           </div>
-        </section>
+          <div class="panel">
+            <span class="label">Privacy Policy</span>
+            <p><a href="https://fluid-flower.github.io/swipe-the-flow-privacy/">View the Swipe the Flow Privacy Policy</a></p>
+          </div>
+        </div>
+      </section>
 
-        <section aria-labelledby="about-heading">
-          <h2 id="about-heading">About the App</h2>
-          <p>Swipe the Flow is a touch-driven interactive fluid simulation app. Users can swipe the screen to
-  shape fluid flow, stir colorful motion, and create swirling vortex-like patterns in real time.</p>
-          <p>The app supports <strong>iPhone and iPad</strong>.</p>
-        </section>
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About the App</h2>
+        <p>Swipe the Flow is a touch-driven interactive fluid simulation app. Users can swipe the screen to shape fluid flow, stir colorful motion, and create swirling vortex-like patterns in real time.</p>
+        <p>The app supports <strong>iPhone and iPad</strong>.</p>
+      </section>
 
-        <section aria-labelledby="permissions-heading">
-          <h2 id="permissions-heading">Permissions</h2>
-          <p>Swipe the Flow may request access to the Photo Library only when the user chooses to save a
-  screenshot or a recorded video from the app.</p>
-          <p>This permission is used solely to save user-created content to the device’s Photos library.</p>
-        </section>
+      <section aria-labelledby="permissions-heading">
+        <h2 id="permissions-heading">Permissions</h2>
+        <p>Swipe the Flow may request access to the Photo Library only when the user chooses to save a screenshot or a recorded video from the app.</p>
+        <p>This permission is used solely to save user-created content to the device's Photos library.</p>
+      </section>
 
-        <section aria-labelledby="privacy-heading">
-          <h2 id="privacy-heading">Privacy</h2>
-          <ul>
-            <li>Swipe the Flow does not require login or account creation.</li>
-            <li>Swipe the Flow does not collect, store, or share personal data.</li>
-            <li>Swipe the Flow does not create user accounts and does not transmit user data to external
-  servers.</li>
-          </ul>
-        </section>
-      </div>
-    </main>
-    <footer class="page">
-      <p>Support page for Swipe the Flow</p>
-    </footer>
-  </body>
-  </html>
+      <section aria-labelledby="privacy-heading">
+        <h2 id="privacy-heading">Privacy</h2>
+        <ul>
+          <li>Swipe the Flow does not require login or account creation.</li>
+          <li>Swipe the Flow does not collect, store, or share personal data.</li>
+          <li>Swipe the Flow does not create user accounts and does not transmit user data to external servers.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="page">
+    <p>Support page for Swipe the Flow</p>
+  </footer>
+</body>
+</html>
