@@ -1,206 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Swipe the Flow Privacy Policy</title>
+  <meta name="theme-color" content="#05070b">
   <meta name="description" content="Privacy Policy for Swipe the Flow, an interactive fluid simulation app for iPhone and iPad.">
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #f5f7fb;
-      --card: #ffffff;
-      --text: #111827;
-      --muted: #4b5563;
-      --border: #e5e7eb;
-      --accent: #0f766e;
-      --accent-soft: #ecfdf5;
-      --shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
-      --radius: 20px;
-      --max-width: 860px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      -webkit-text-size-adjust: 100%;
-    }
-
-    body {
-      margin: 0;
-      background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
-      color: var(--text);
-      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-    }
-
-    a {
-      color: var(--accent);
-      text-underline-offset: 2px;
-    }
-
-    a:hover,
-    a:focus-visible {
-      text-decoration-thickness: 2px;
-    }
-
-    .page {
-      width: min(100% - 32px, var(--max-width));
-      margin: 0 auto;
-      padding: 32px 0 56px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 28px 22px;
-    }
-
-    header.card {
-      margin-bottom: 20px;
-    }
-
-    main.card section + section {
-      margin-top: 28px;
-      padding-top: 28px;
-      border-top: 1px solid var(--border);
-    }
-
-    h1,
-    h2 {
-      line-height: 1.2;
-      margin: 0 0 12px;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.25rem);
-      letter-spacing: -0.03em;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      color: var(--accent);
-    }
-
-    p {
-      margin: 0 0 12px;
-    }
-
-    .lede {
-      font-size: 1.05rem;
-      color: var(--muted);
-      max-width: 60ch;
-    }
-
-    .summary {
-      display: inline-block;
-      margin-top: 16px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-
-    footer {
-      margin-top: 18px;
-      color: var(--muted);
-      font-size: 0.95rem;
-      text-align: center;
-    }
-
-    @media (min-width: 720px) {
-      .page {
-        width: min(100% - 48px, var(--max-width));
-        padding-top: 48px;
-        padding-bottom: 72px;
-      }
-
-      .card {
-        padding: 36px 34px;
-      }
-    }
-  </style>
+  <link rel="canonical" href="https://fluid-flower.github.io/swipe-the-flow-privacy/">
+  <link rel="icon" type="image/png" href="app-icon.png">
+  <link rel="apple-touch-icon" href="app-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Swipe the Flow Privacy Policy</title>
 </head>
 <body>
-  <header class="page">
-    <div class="card">
-      <h1>Privacy Policy for Swipe the Flow</h1>
-      <p class="lede">Swipe the Flow is an interactive fluid simulation app for iPhone and iPad. This page explains how the app handles privacy, advertising, and device permissions.</p>
-      <p class="summary">No account required. Photos stay on your device. Ads and product analytics use Google services without cross-app tracking.</p>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="https://fluid-flower.github.io/" aria-label="Swipe the Flow home">
+        <img class="brand-mark" src="app-icon.png" width="34" height="34" alt="">
+        <span>Swipe the Flow</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="https://fluid-flower.github.io/" data-ko="홈" data-en="Home">홈</a>
+        <a href="./" aria-current="page" data-ko="개인정보" data-en="Privacy">개인정보</a>
+        <a href="support.html" data-ko="고객지원" data-en="Support">고객지원</a>
+        <button class="language-button" id="languageButton" type="button" aria-label="Switch to English">EN</button>
+      </nav>
     </div>
   </header>
-  <main class="page">
-    <div class="card">
-      <section aria-labelledby="effective-date-heading">
-        <h2 id="effective-date-heading">Effective Date</h2>
-        <p>Effective Date: August 11, 2026</p>
-      </section>
 
-      <section aria-labelledby="overview-heading">
-        <h2 id="overview-heading">Overview</h2>
-        <p>Swipe the Flow does not require account creation or user login.</p>
-        <p>The developer does not operate account systems, cloud storage, or user databases for the app. Swipe the Flow uses Google Mobile Ads SDK to display ads and Google Analytics for Firebase to understand whether important app features and the optional Pro purchase flow are working as intended.</p>
-      </section>
+  <main>
+    <section class="shell hero">
+      <p class="eyebrow" data-ko="개인정보 보호" data-en="Privacy by design">개인정보 보호</p>
+      <h1>
+        <span data-ko="당신의 흐름은" data-en="Your flow stays">당신의 흐름은</span><br>
+        <span class="gradient-word" data-ko="당신의 기기에." data-en="on your device.">당신의 기기에.</span>
+      </h1>
+      <p class="lede" data-ko="Swipe the Flow가 계정, 사진, 광고 및 제품 분석 데이터를 어떻게 처리하는지 투명하게 설명합니다." data-en="A clear explanation of how Swipe the Flow handles accounts, photos, advertising, and product analytics.">Swipe the Flow가 계정, 사진, 광고 및 제품 분석 데이터를 어떻게 처리하는지 투명하게 설명합니다.</p>
 
-      <section aria-labelledby="analytics-heading">
-        <h2 id="analytics-heading">Product Analytics</h2>
-        <p>Swipe the Flow uses Google Analytics for Firebase to measure a limited set of product events, such as attempts to add another image layer, views of the Pro offer, purchase starts, and verified purchase completions.</p>
-        <p>Google Analytics may process an app-instance identifier, product interaction events, purchase completion events, and approximate location derived from a masked IP address. The app does not send your photos, videos, text input, email address, name, or account information to Analytics.</p>
-        <p>Analytics data is used only to measure app usage and improve product features. It is not linked to your identity and is not used to track you across apps or websites. Automatic screen reporting, IDFV collection, advertising-personalization signals, and Analytics access to IDFA are disabled.</p>
-      </section>
+      <div class="summary-grid" aria-label="Privacy summary">
+        <article class="summary-card">
+          <div class="summary-icon" aria-hidden="true">◎</div>
+          <h2 data-ko="계정 불필요" data-en="No account">계정 불필요</h2>
+          <p data-ko="가입이나 로그인이 필요하지 않습니다." data-en="No sign-up or login is required.">가입이나 로그인이 필요하지 않습니다.</p>
+        </article>
+        <article class="summary-card">
+          <div class="summary-icon" aria-hidden="true">▣</div>
+          <h2 data-ko="사진은 기기 안에서" data-en="Photos stay local">사진은 기기 안에서</h2>
+          <p data-ko="사진과 영상은 앱이 외부 서버로 업로드하지 않습니다." data-en="The app does not upload your photos or videos to an external server.">사진과 영상은 앱이 외부 서버로 업로드하지 않습니다.</p>
+        </article>
+        <article class="summary-card">
+          <div class="summary-icon" aria-hidden="true">⌁</div>
+          <h2 data-ko="교차 앱 추적 없음" data-en="No cross-app tracking">교차 앱 추적 없음</h2>
+          <p data-ko="광고와 제품 분석에 Google 서비스를 사용하지만 사용자를 추적하지 않습니다." data-en="Google services support ads and product analytics without tracking you across apps.">광고와 제품 분석에 Google 서비스를 사용하지만 사용자를 추적하지 않습니다.</p>
+        </article>
+      </div>
+    </section>
 
-      <section aria-labelledby="ads-heading">
-        <h2 id="ads-heading">Advertising</h2>
-        <p>Swipe the Flow uses Google Mobile Ads SDK to display advertisements.</p>
-        <p>The app requests only non-personalized ads. It does not use the advertising identifier for tracking and does not use App Tracking Transparency. The app does not track users across apps or websites owned by other companies.</p>
-        <p>For users in the European Economic Area, the United Kingdom, and Switzerland, ad consent is managed through Google's User Messaging Platform where required.</p>
-        <p>To serve non-personalized ads, Google may process limited information such as IP address, app interactions, ad impressions, and ad clicks for ad delivery, fraud prevention, and ad performance measurement. This information is not linked to your identity.</p>
-        <p>For more information about how Google handles data, please review the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-      </section>
+    <article class="shell document">
+      <div data-language="ko">
+        <p class="effective-date">시행일: 2026년 8월 11일</p>
 
-      <section aria-labelledby="photos-heading">
-        <h2 id="photos-heading">Photos Permission</h2>
-        <p>Swipe the Flow may request access to your Photos library only when you choose to save a screenshot or recorded video. This access is used solely to save content you create in the app to your device's Photos library. Photos and videos are processed on your device and are not uploaded by the app.</p>
-      </section>
+        <section aria-labelledby="ko-overview-heading">
+          <h2 id="ko-overview-heading">개요</h2>
+          <p>Swipe the Flow는 계정 생성이나 로그인을 요구하지 않습니다.</p>
+          <p>개발자는 앱을 위한 계정 시스템, 클라우드 저장소 또는 사용자 데이터베이스를 운영하지 않습니다. Swipe the Flow는 광고 표시를 위해 Google Mobile Ads SDK를 사용하고, 중요한 앱 기능과 선택적인 Pro 구매 과정이 의도대로 작동하는지 파악하기 위해 Google Analytics for Firebase를 사용합니다.</p>
+        </section>
 
-      <section aria-labelledby="developer-data-heading">
-        <h2 id="developer-data-heading">Developer Data Handling</h2>
-        <p>Swipe the Flow does not create user accounts and does not use developer-operated backend services to store user profiles, uploaded content, or account data.</p>
-      </section>
+        <section aria-labelledby="ko-analytics-heading">
+          <h2 id="ko-analytics-heading">제품 분석</h2>
+          <p>Swipe the Flow는 이미지 레이어 추가 시도, Pro 안내 화면 표시, 구매 시작, 검증된 구매 완료 등 제한된 제품 이벤트를 측정하기 위해 Google Analytics for Firebase를 사용합니다.</p>
+          <p>Google Analytics는 앱 인스턴스 식별자, 제품 상호 작용 이벤트, 구매 완료 이벤트와 마스킹된 IP 주소에서 파생된 대략적인 위치를 처리할 수 있습니다. 앱은 사용자의 사진, 영상, 입력한 텍스트, 이메일 주소, 이름 또는 계정 정보를 Analytics로 전송하지 않습니다.</p>
+          <p>분석 데이터는 앱 사용을 측정하고 제품 기능을 개선하는 목적으로만 사용됩니다. 이 데이터는 사용자의 신원과 연결되지 않으며 앱이나 웹사이트를 넘나들며 사용자를 추적하는 데 사용되지 않습니다. 자동 화면 보고, IDFV 수집, 광고 개인화 신호 및 Analytics의 IDFA 접근은 비활성화되어 있습니다.</p>
+        </section>
 
-      <section aria-labelledby="purchases-heading">
-        <h2 id="purchases-heading">In-App Purchases</h2>
-        <p>Swipe the Flow offers an optional one-time in-app purchase, "Swipe the Flow Pro," which removes ads and unlocks additional visual options. Purchases are processed by Apple through the App Store. The developer does not collect or store your payment information. A verified purchase completion may be reported to product analytics without payment details or account information.</p>
-      </section>
+        <section aria-labelledby="ko-ads-heading">
+          <h2 id="ko-ads-heading">광고</h2>
+          <p>Swipe the Flow는 광고를 표시하기 위해 Google Mobile Ads SDK를 사용합니다.</p>
+          <p>앱은 개인 맞춤이 아닌 광고만 요청합니다. 추적을 위해 광고 식별자를 사용하지 않고 앱 추적 투명성(App Tracking Transparency)을 사용하지 않으며, 다른 회사가 소유한 앱이나 웹사이트를 넘나들며 사용자를 추적하지 않습니다.</p>
+          <p>유럽 경제 지역, 영국 및 스위스 사용자에게는 필요한 경우 Google User Messaging Platform을 통해 광고 동의를 관리합니다.</p>
+          <p>개인 맞춤이 아닌 광고를 제공하기 위해 Google은 광고 제공, 사기 방지 및 광고 성과 측정 목적으로 IP 주소, 앱 상호 작용, 광고 노출 및 광고 클릭 등의 제한된 정보를 처리할 수 있습니다. 이 정보는 사용자의 신원과 연결되지 않습니다.</p>
+          <p>Google의 데이터 처리 방식은 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>에서 확인할 수 있습니다.</p>
+        </section>
 
-      <section aria-labelledby="third-party-heading">
-        <h2 id="third-party-heading">Third-Party Services</h2>
-        <p>Swipe the Flow uses Google Mobile Ads SDK as a third-party advertising service and Google Analytics for Firebase as a product analytics service.</p>
-      </section>
+        <section aria-labelledby="ko-photos-heading">
+          <h2 id="ko-photos-heading">사진 권한</h2>
+          <p>Swipe the Flow는 사용자가 스크린샷이나 녹화 영상을 저장하기로 선택할 때만 사진 보관함 접근을 요청할 수 있습니다. 이 권한은 앱에서 만든 콘텐츠를 기기의 사진 보관함에 저장하는 용도로만 사용됩니다. 사진과 영상은 기기에서 처리되며 앱이 외부로 업로드하지 않습니다.</p>
+        </section>
 
-      <section aria-labelledby="children-heading">
-        <h2 id="children-heading">Children's Privacy</h2>
-        <p>Swipe the Flow is not directed to children under 13. The developer does not knowingly collect personal information from children through developer-operated features. Third-party advertising and analytics services may process limited data as described above.</p>
-      </section>
+        <section aria-labelledby="ko-developer-heading">
+          <h2 id="ko-developer-heading">개발자의 데이터 처리</h2>
+          <p>Swipe the Flow는 사용자 계정을 만들지 않으며 개발자가 운영하는 백엔드 서비스에 사용자 프로필, 업로드된 콘텐츠 또는 계정 데이터를 저장하지 않습니다.</p>
+        </section>
 
-      <section aria-labelledby="changes-heading">
-        <h2 id="changes-heading">Changes to This Privacy Policy</h2>
-        <p>This Privacy Policy may be updated from time to time to reflect app changes, advertising changes, or legal requirements. The latest version will be posted on this page.</p>
-      </section>
+        <section aria-labelledby="ko-purchases-heading">
+          <h2 id="ko-purchases-heading">앱 내 구입</h2>
+          <p>Swipe the Flow는 광고를 제거하고 추가 시각 옵션을 잠금 해제하는 선택적 일회성 앱 내 구입인 “Swipe the Flow Pro”를 제공합니다. 구매는 App Store를 통해 Apple이 처리하며 개발자는 결제 정보를 수집하거나 저장하지 않습니다. 검증된 구매 완료는 결제 세부 정보나 계정 정보 없이 제품 분석에 보고될 수 있습니다.</p>
+        </section>
 
-      <section aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact</h2>
-        <p>If you have questions about this Privacy Policy, contact <a href="mailto:junho4268@naver.com">junho4268@naver.com</a>.</p>
-      </section>
-    </div>
+        <section aria-labelledby="ko-third-party-heading">
+          <h2 id="ko-third-party-heading">제3자 서비스</h2>
+          <p>Swipe the Flow는 제3자 광고 서비스로 Google Mobile Ads SDK를, 제품 분석 서비스로 Google Analytics for Firebase를 사용합니다.</p>
+        </section>
+
+        <section aria-labelledby="ko-children-heading">
+          <h2 id="ko-children-heading">아동의 개인정보</h2>
+          <p>Swipe the Flow는 만 13세 미만 아동을 대상으로 하지 않습니다. 개발자는 개발자가 운영하는 기능을 통해 아동의 개인정보를 고의로 수집하지 않습니다. 제3자 광고 및 분석 서비스는 위에 설명된 제한된 데이터를 처리할 수 있습니다.</p>
+        </section>
+
+        <section aria-labelledby="ko-changes-heading">
+          <h2 id="ko-changes-heading">개인정보처리방침 변경</h2>
+          <p>앱 변경, 광고 변경 또는 법적 요구사항을 반영하기 위해 이 개인정보처리방침을 수시로 갱신할 수 있습니다. 최신 버전은 이 페이지에 게시됩니다.</p>
+        </section>
+
+        <section aria-labelledby="ko-contact-heading">
+          <h2 id="ko-contact-heading">문의</h2>
+          <p>개인정보처리방침에 관한 질문은 <a href="mailto:junho4268@naver.com">junho4268@naver.com</a>으로 문의해 주세요.</p>
+        </section>
+      </div>
+
+      <div data-language="en" hidden>
+        <p class="effective-date">Effective Date: August 11, 2026</p>
+
+        <section aria-labelledby="en-overview-heading">
+          <h2 id="en-overview-heading">Overview</h2>
+          <p>Swipe the Flow does not require account creation or user login.</p>
+          <p>The developer does not operate account systems, cloud storage, or user databases for the app. Swipe the Flow uses Google Mobile Ads SDK to display ads and Google Analytics for Firebase to understand whether important app features and the optional Pro purchase flow are working as intended.</p>
+        </section>
+
+        <section aria-labelledby="en-analytics-heading">
+          <h2 id="en-analytics-heading">Product Analytics</h2>
+          <p>Swipe the Flow uses Google Analytics for Firebase to measure a limited set of product events, such as attempts to add another image layer, views of the Pro offer, purchase starts, and verified purchase completions.</p>
+          <p>Google Analytics may process an app-instance identifier, product interaction events, purchase completion events, and approximate location derived from a masked IP address. The app does not send your photos, videos, text input, email address, name, or account information to Analytics.</p>
+          <p>Analytics data is used only to measure app usage and improve product features. It is not linked to your identity and is not used to track you across apps or websites. Automatic screen reporting, IDFV collection, advertising-personalization signals, and Analytics access to IDFA are disabled.</p>
+        </section>
+
+        <section aria-labelledby="en-ads-heading">
+          <h2 id="en-ads-heading">Advertising</h2>
+          <p>Swipe the Flow uses Google Mobile Ads SDK to display advertisements.</p>
+          <p>The app requests only non-personalized ads. It does not use the advertising identifier for tracking and does not use App Tracking Transparency. The app does not track users across apps or websites owned by other companies.</p>
+          <p>For users in the European Economic Area, the United Kingdom, and Switzerland, ad consent is managed through Google's User Messaging Platform where required.</p>
+          <p>To serve non-personalized ads, Google may process limited information such as IP address, app interactions, ad impressions, and ad clicks for ad delivery, fraud prevention, and ad performance measurement. This information is not linked to your identity.</p>
+          <p>For more information about how Google handles data, please review the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+        </section>
+
+        <section aria-labelledby="en-photos-heading">
+          <h2 id="en-photos-heading">Photos Permission</h2>
+          <p>Swipe the Flow may request access to your Photos library only when you choose to save a screenshot or recorded video. This access is used solely to save content you create in the app to your device's Photos library. Photos and videos are processed on your device and are not uploaded by the app.</p>
+        </section>
+
+        <section aria-labelledby="en-developer-heading">
+          <h2 id="en-developer-heading">Developer Data Handling</h2>
+          <p>Swipe the Flow does not create user accounts and does not use developer-operated backend services to store user profiles, uploaded content, or account data.</p>
+        </section>
+
+        <section aria-labelledby="en-purchases-heading">
+          <h2 id="en-purchases-heading">In-App Purchases</h2>
+          <p>Swipe the Flow offers an optional one-time in-app purchase, "Swipe the Flow Pro," which removes ads and unlocks additional visual options. Purchases are processed by Apple through the App Store. The developer does not collect or store your payment information. A verified purchase completion may be reported to product analytics without payment details or account information.</p>
+        </section>
+
+        <section aria-labelledby="en-third-party-heading">
+          <h2 id="en-third-party-heading">Third-Party Services</h2>
+          <p>Swipe the Flow uses Google Mobile Ads SDK as a third-party advertising service and Google Analytics for Firebase as a product analytics service.</p>
+        </section>
+
+        <section aria-labelledby="en-children-heading">
+          <h2 id="en-children-heading">Children's Privacy</h2>
+          <p>Swipe the Flow is not directed to children under 13. The developer does not knowingly collect personal information from children through developer-operated features. Third-party advertising and analytics services may process limited data as described above.</p>
+        </section>
+
+        <section aria-labelledby="en-changes-heading">
+          <h2 id="en-changes-heading">Changes to This Privacy Policy</h2>
+          <p>This Privacy Policy may be updated from time to time to reflect app changes, advertising changes, or legal requirements. The latest version will be posted on this page.</p>
+        </section>
+
+        <section aria-labelledby="en-contact-heading">
+          <h2 id="en-contact-heading">Contact</h2>
+          <p>If you have questions about this Privacy Policy, contact <a href="mailto:junho4268@naver.com">junho4268@naver.com</a>.</p>
+        </section>
+      </div>
+
+      <a class="back-home" href="https://fluid-flower.github.io/">
+        <span aria-hidden="true">←</span>
+        <span data-ko="Swipe the Flow 홈으로" data-en="Back to Swipe the Flow">Swipe the Flow 홈으로</span>
+      </a>
+    </article>
   </main>
-  <footer class="page">
-    <p>Privacy Policy for Swipe the Flow</p>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>© 2026 Fluid Flower</span>
+      <div class="footer-links">
+        <a href="https://apps.apple.com/app/id6766940354" data-ko="App Store" data-en="App Store">App Store</a>
+        <a href="./" data-ko="개인정보처리방침" data-en="Privacy Policy">개인정보처리방침</a>
+        <a href="support.html" data-ko="고객지원" data-en="Support">고객지원</a>
+      </div>
+    </div>
   </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>

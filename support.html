@@ -1,224 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05070b">
+  <meta name="description" content="Support for Swipe the Flow, an interactive fluid simulation app for iPhone and iPad.">
+  <link rel="canonical" href="https://fluid-flower.github.io/swipe-the-flow-privacy/support.html">
+  <link rel="icon" type="image/png" href="app-icon.png">
+  <link rel="apple-touch-icon" href="app-icon.png">
+  <link rel="stylesheet" href="styles.css">
   <title>Swipe the Flow Support</title>
-  <meta name="description" content="Support page for Swipe the Flow, an interactive fluid simulation app for iPhone and iPad. Find contact information, app details, privacy information, permission notes, and ad-related information.">
-  <style>
-    :root {
-      color-scheme: light;
-      --bg: #f5f7fb;
-      --card: #ffffff;
-      --text: #111827;
-      --muted: #4b5563;
-      --border: #e5e7eb;
-      --accent: #0f766e;
-      --accent-soft: #ecfdf5;
-      --shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
-      --radius: 20px;
-      --max-width: 860px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      -webkit-text-size-adjust: 100%;
-    }
-
-    body {
-      margin: 0;
-      background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
-      color: var(--text);
-      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-    }
-
-    a {
-      color: var(--accent);
-      text-underline-offset: 2px;
-    }
-
-    a:hover,
-    a:focus-visible {
-      text-decoration-thickness: 2px;
-    }
-
-    .page {
-      width: min(100% - 32px, var(--max-width));
-      margin: 0 auto;
-      padding: 32px 0 56px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 28px 22px;
-    }
-
-    header.card {
-      margin-bottom: 20px;
-    }
-
-    main.card section + section {
-      margin-top: 28px;
-      padding-top: 28px;
-      border-top: 1px solid var(--border);
-    }
-
-    h1,
-    h2 {
-      line-height: 1.2;
-      margin: 0 0 12px;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.25rem);
-      letter-spacing: -0.03em;
-    }
-
-    h2 {
-      font-size: 1.2rem;
-      color: var(--accent);
-    }
-
-    p {
-      margin: 0 0 12px;
-    }
-
-    .lede {
-      font-size: 1.05rem;
-      color: var(--muted);
-      max-width: 60ch;
-    }
-
-    .summary {
-      display: inline-block;
-      margin-top: 16px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-
-    .grid {
-      display: grid;
-      gap: 16px;
-      grid-template-columns: 1fr;
-    }
-
-    .panel {
-      background: #fbfdff;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 16px;
-    }
-
-    .label {
-      display: block;
-      margin-bottom: 6px;
-      color: var(--muted);
-      font-size: 0.92rem;
-      font-weight: 600;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    li + li {
-      margin-top: 8px;
-    }
-
-    footer {
-      margin-top: 18px;
-      color: var(--muted);
-      font-size: 0.95rem;
-      text-align: center;
-    }
-
-    @media (min-width: 720px) {
-      .page {
-        width: min(100% - 48px, var(--max-width));
-        padding-top: 48px;
-        padding-bottom: 72px;
-      }
-
-      .card {
-        padding: 36px 34px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-  </style>
 </head>
 <body>
-  <header class="page">
-    <div class="card">
-      <h1>Swipe the Flow Support</h1>
-      <p class="lede">Swipe the Flow is an interactive fluid simulation app for iPhone and iPad that lets you create flowing motion and vortex patterns with touch gestures.</p>
-      <p class="summary">No login required. Photos access is optional. Ads are served through Google Mobile Ads SDK.</p>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="https://fluid-flower.github.io/" aria-label="Swipe the Flow home">
+        <img class="brand-mark" src="app-icon.png" width="34" height="34" alt="">
+        <span>Swipe the Flow</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="https://fluid-flower.github.io/" data-ko="홈" data-en="Home">홈</a>
+        <a href="./" data-ko="개인정보" data-en="Privacy">개인정보</a>
+        <a href="support.html" aria-current="page" data-ko="고객지원" data-en="Support">고객지원</a>
+        <button class="language-button" id="languageButton" type="button" aria-label="Switch to English">EN</button>
+      </nav>
     </div>
   </header>
-  <main class="page">
-    <div class="card">
-      <section aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact Support</h2>
-        <div class="grid">
-          <div class="panel">
-            <span class="label">Support email</span>
-            <p><a href="mailto:junho4268@naver.com">junho4268@naver.com</a></p>
+
+  <main>
+    <section class="shell hero">
+      <p class="eyebrow" data-ko="고객지원" data-en="Swipe the Flow Support">고객지원</p>
+      <h1>
+        <span data-ko="도움이 필요하면" data-en="Need a hand?">도움이 필요하면</span><br>
+        <span class="gradient-word" data-ko="언제든 알려주세요." data-en="We’re here to help.">언제든 알려주세요.</span>
+      </h1>
+      <p class="lede" data-ko="앱 사용, 권한, 광고 또는 Pro 구매에 관한 질문을 이메일로 보내주세요." data-en="Send us a question about using the app, permissions, advertising, or Swipe the Flow Pro.">앱 사용, 권한, 광고 또는 Pro 구매에 관한 질문을 이메일로 보내주세요.</p>
+
+      <div class="summary-grid" aria-label="Support summary">
+        <article class="summary-card">
+          <div class="summary-icon" aria-hidden="true">↗</div>
+          <h2 data-ko="이메일 문의" data-en="Email support">이메일 문의</h2>
+          <p><a href="mailto:junho4268@naver.com">junho4268@naver.com</a></p>
+        </article>
+        <article class="summary-card">
+          <div class="summary-icon" aria-hidden="true">◫</div>
+          <h2 data-ko="지원 기기" data-en="Supported devices">지원 기기</h2>
+          <p data-ko="iPhone과 iPad에서 사용할 수 있습니다." data-en="Available for iPhone and iPad.">iPhone과 iPad에서 사용할 수 있습니다.</p>
+        </article>
+        <article class="summary-card">
+          <div class="summary-icon" aria-hidden="true">◎</div>
+          <h2 data-ko="로그인 불필요" data-en="No login required">로그인 불필요</h2>
+          <p data-ko="계정을 만들지 않고 바로 사용할 수 있습니다." data-en="Start using the app without creating an account.">계정을 만들지 않고 바로 사용할 수 있습니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <article class="shell document">
+      <div data-language="ko">
+        <section aria-labelledby="ko-support-contact-heading">
+          <h2 id="ko-support-contact-heading">문의하기</h2>
+          <div class="contact-grid">
+            <div class="contact-card">
+              <span class="label">고객지원 이메일</span>
+              <p><a href="mailto:junho4268@naver.com">junho4268@naver.com</a></p>
+            </div>
+            <div class="contact-card">
+              <span class="label">개인정보처리방침</span>
+              <p><a href="./">Swipe the Flow 개인정보처리방침 보기</a></p>
+            </div>
           </div>
-          <div class="panel">
-            <span class="label">Privacy Policy</span>
-            <p><a href="https://fluid-flower.github.io/swipe-the-flow-privacy/">View the Swipe the Flow Privacy Policy</a></p>
+        </section>
+
+        <section aria-labelledby="ko-about-heading">
+          <h2 id="ko-about-heading">앱 소개</h2>
+          <p>Swipe the Flow는 터치로 조작하는 인터랙티브 유체 시뮬레이션 앱입니다. 화면을 쓸어 유체 흐름의 모양을 바꾸고, 다채로운 움직임을 휘저으며, 실시간으로 소용돌이 패턴을 만들 수 있습니다.</p>
+          <p>이 앱은 <strong>iPhone과 iPad</strong>를 지원합니다.</p>
+        </section>
+
+        <section aria-labelledby="ko-permissions-heading">
+          <h2 id="ko-permissions-heading">권한</h2>
+          <p>Swipe the Flow는 사용자가 앱에서 스크린샷이나 녹화 영상을 저장하기로 선택할 때만 사진 보관함 접근을 요청할 수 있습니다.</p>
+          <p>이 권한은 사용자가 만든 콘텐츠를 기기의 사진 보관함에 저장하는 용도로만 사용됩니다.</p>
+        </section>
+
+        <section aria-labelledby="ko-support-ads-heading">
+          <h2 id="ko-support-ads-heading">광고</h2>
+          <p>Swipe the Flow는 광고를 표시하기 위해 Google Mobile Ads SDK를 사용합니다.</p>
+          <p>앱은 개인 맞춤이 아닌 광고만 요청합니다. 추적을 위해 광고 식별자를 사용하지 않고 앱 추적 투명성(App Tracking Transparency)을 사용하지 않으며, 다른 회사가 소유한 앱이나 웹사이트를 넘나들며 사용자를 추적하지 않습니다.</p>
+          <p>유럽 경제 지역, 영국 및 스위스 사용자에게는 필요한 경우 Google User Messaging Platform을 통해 광고 동의를 관리합니다.</p>
+          <p>개인 맞춤이 아닌 광고를 제공하기 위해 Google은 광고 제공, 사기 방지 및 광고 성과 측정 목적으로 IP 주소, 앱 상호 작용, 광고 노출 및 광고 클릭 등의 제한된 정보를 처리할 수 있습니다. 이 정보는 사용자의 신원과 연결되지 않습니다.</p>
+          <p>자세한 내용은 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 확인하세요.</p>
+        </section>
+
+        <section aria-labelledby="ko-support-privacy-heading">
+          <h2 id="ko-support-privacy-heading">개인정보 보호</h2>
+          <ul>
+            <li>Swipe the Flow는 로그인이나 계정 생성을 요구하지 않습니다.</li>
+            <li>개발자는 앱을 위한 사용자 계정 시스템, 클라우드 사용자 데이터베이스 또는 개발자가 운영하는 백엔드를 운영하지 않습니다.</li>
+            <li>Swipe the Flow는 자체 앱 기능으로 사용자 프로필을 만들거나 사용자가 업로드한 데이터를 개발자 운영 서버에 저장하지 않습니다.</li>
+            <li>광고는 Google Mobile Ads SDK를 통해 제공됩니다. 앱은 개인 맞춤이 아닌 광고만 요청하고 앱 추적 투명성을 사용하지 않으며, 앱이나 웹사이트를 넘나들며 사용자를 추적하지 않습니다.</li>
+            <li>선택적 일회성 앱 내 구입인 “Swipe the Flow Pro”는 App Store를 통해 Apple이 처리하며 개발자는 결제 정보를 수집하지 않습니다.</li>
+          </ul>
+        </section>
+      </div>
+
+      <div data-language="en" hidden>
+        <section aria-labelledby="en-support-contact-heading">
+          <h2 id="en-support-contact-heading">Contact Support</h2>
+          <div class="contact-grid">
+            <div class="contact-card">
+              <span class="label">Support email</span>
+              <p><a href="mailto:junho4268@naver.com">junho4268@naver.com</a></p>
+            </div>
+            <div class="contact-card">
+              <span class="label">Privacy Policy</span>
+              <p><a href="./">View the Swipe the Flow Privacy Policy</a></p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section aria-labelledby="about-heading">
-        <h2 id="about-heading">About the App</h2>
-        <p>Swipe the Flow is a touch-driven interactive fluid simulation app. Users can swipe the screen to shape fluid flow, stir colorful motion, and create swirling vortex-like patterns in real time.</p>
-        <p>The app supports <strong>iPhone and iPad</strong>.</p>
-      </section>
+        <section aria-labelledby="en-about-heading">
+          <h2 id="en-about-heading">About the App</h2>
+          <p>Swipe the Flow is a touch-driven interactive fluid simulation app. Users can swipe the screen to shape fluid flow, stir colorful motion, and create swirling vortex-like patterns in real time.</p>
+          <p>The app supports <strong>iPhone and iPad</strong>.</p>
+        </section>
 
-      <section aria-labelledby="permissions-heading">
-        <h2 id="permissions-heading">Permissions</h2>
-        <p>Swipe the Flow may request access to the Photo Library only when the user chooses to save a screenshot or a recorded video from the app.</p>
-        <p>This permission is used solely to save user-created content to the device's Photos library.</p>
-      </section>
+        <section aria-labelledby="en-permissions-heading">
+          <h2 id="en-permissions-heading">Permissions</h2>
+          <p>Swipe the Flow may request access to the Photo Library only when the user chooses to save a screenshot or a recorded video from the app.</p>
+          <p>This permission is used solely to save user-created content to the device's Photos library.</p>
+        </section>
 
-      <section aria-labelledby="ads-heading">
-        <h2 id="ads-heading">Advertising</h2>
-        <p>Swipe the Flow uses Google Mobile Ads SDK to display advertisements.</p>
-        <p>The app requests only non-personalized ads. It does not use the advertising identifier for tracking and does not use App Tracking Transparency. The app does not track users across apps or websites owned by other companies.</p>
-        <p>For users in the European Economic Area, the United Kingdom, and Switzerland, ad consent is managed through Google's User Messaging Platform where required.</p>
-        <p>To serve non-personalized ads, Google may process limited information such as IP address, app interactions, ad impressions, and ad clicks for ad delivery, fraud prevention, and ad performance measurement. This information is not linked to your identity.</p>
-        <p>For more information, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-      </section>
+        <section aria-labelledby="en-support-ads-heading">
+          <h2 id="en-support-ads-heading">Advertising</h2>
+          <p>Swipe the Flow uses Google Mobile Ads SDK to display advertisements.</p>
+          <p>The app requests only non-personalized ads. It does not use the advertising identifier for tracking and does not use App Tracking Transparency. The app does not track users across apps or websites owned by other companies.</p>
+          <p>For users in the European Economic Area, the United Kingdom, and Switzerland, ad consent is managed through Google's User Messaging Platform where required.</p>
+          <p>To serve non-personalized ads, Google may process limited information such as IP address, app interactions, ad impressions, and ad clicks for ad delivery, fraud prevention, and ad performance measurement. This information is not linked to your identity.</p>
+          <p>For more information, see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+        </section>
 
-      <section aria-labelledby="privacy-heading">
-        <h2 id="privacy-heading">Privacy</h2>
-        <ul>
-          <li>Swipe the Flow does not require login or account creation.</li>
-          <li>The developer does not operate a user account system, cloud user database, or developer-run backend for the app.</li>
-          <li>Swipe the Flow does not use its own app features to create user profiles or store uploaded user data on developer-operated servers.</li>
-          <li>Advertising is provided through Google Mobile Ads SDK. The app requests only non-personalized ads, does not use App Tracking Transparency, and does not track users across apps or websites.</li>
-          <li>An optional one-time in-app purchase ("Swipe the Flow Pro") is processed by Apple through the App Store; the developer does not collect payment information.</li>
-        </ul>
-      </section>
-    </div>
+        <section aria-labelledby="en-support-privacy-heading">
+          <h2 id="en-support-privacy-heading">Privacy</h2>
+          <ul>
+            <li>Swipe the Flow does not require login or account creation.</li>
+            <li>The developer does not operate a user account system, cloud user database, or developer-run backend for the app.</li>
+            <li>Swipe the Flow does not use its own app features to create user profiles or store uploaded user data on developer-operated servers.</li>
+            <li>Advertising is provided through Google Mobile Ads SDK. The app requests only non-personalized ads, does not use App Tracking Transparency, and does not track users across apps or websites.</li>
+            <li>An optional one-time in-app purchase ("Swipe the Flow Pro") is processed by Apple through the App Store; the developer does not collect payment information.</li>
+          </ul>
+        </section>
+      </div>
+
+      <a class="back-home" href="https://fluid-flower.github.io/">
+        <span aria-hidden="true">←</span>
+        <span data-ko="Swipe the Flow 홈으로" data-en="Back to Swipe the Flow">Swipe the Flow 홈으로</span>
+      </a>
+    </article>
   </main>
-  <footer class="page">
-    <p>Support page for Swipe the Flow</p>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>© 2026 Fluid Flower</span>
+      <div class="footer-links">
+        <a href="https://apps.apple.com/app/id6766940354" data-ko="App Store" data-en="App Store">App Store</a>
+        <a href="./" data-ko="개인정보처리방침" data-en="Privacy Policy">개인정보처리방침</a>
+        <a href="support.html" data-ko="고객지원" data-en="Support">고객지원</a>
+      </div>
+    </div>
   </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>
