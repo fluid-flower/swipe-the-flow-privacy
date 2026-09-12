@@ -91,6 +91,14 @@
           <p>사진이나 로고를 구조물로 불러올 때는 시스템 사진 선택기를 사용하며, 사용자가 선택한 항목만 앱에 전달됩니다. 사진 보관함 전체 접근 권한은 필요하지 않습니다. 스크린샷이나 녹화 영상을 사진 보관함에 직접 저장할 때는 저장 권한을 요청할 수 있으며, 권한을 허용하지 않아도 시스템 공유 시트로 내보낼 수 있습니다. 불러온 사진과 앱에서 만든 사진·영상은 기기에서 처리되며 앱이 외부로 업로드하지 않습니다.</p>
         </section>
 
+        <section aria-labelledby="ko-mlkit-heading">
+          <h2 id="ko-mlkit-heading">사진 배경 지우기 (Android)</h2>
+          <p>이 절은 Android 버전에만 해당합니다.</p>
+          <p>사진이나 로고를 구조물로 불러오면 Google ML Kit의 피사체 분리 기능이 배경을 지웁니다. 계산은 기기 안에서 이루어지며 사진은 기기를 떠나지 않습니다.</p>
+          <p>이 기능은 Google Play 서비스가 제공하는 모듈을 사용하므로, 처음 사용할 때 그 모듈을 내려받기 위해 네트워크를 사용할 수 있습니다.</p>
+          <p>또한 ML Kit은 진단 및 사용 분석을 위해 기기 정보(제조사·모델·OS 버전), 앱 패키지 이름과 버전, 진단용 식별자와 설치별 식별자, 지연 시간 등 성능 지표, 기능 오류 코드를 Google에 전송합니다. 사진 자체는 전송되지 않으며, Google은 이 데이터를 제3자에게 이전하지 않는다고 밝히고 있습니다.</p>
+        </section>
+
         <section aria-labelledby="ko-developer-heading">
           <h2 id="ko-developer-heading">개발자의 데이터 처리</h2>
           <p>Swipe the Flow는 사용자 계정을 만들지 않으며 개발자가 운영하는 백엔드 서비스에 사용자 프로필, 업로드된 콘텐츠 또는 계정 데이터를 저장하지 않습니다.</p>
@@ -153,6 +161,14 @@
           <p>When you import a photo or logo as an obstacle, Swipe the Flow uses the system photo picker and receives only the items you select. Full access to your Photos library is not required. The app may request permission when you save a screenshot or recorded video directly to your Photos library, but you can still export it through the system share sheet without granting Photos access. Imported photos and content created in the app are processed on your device and are not uploaded by the app.</p>
         </section>
 
+        <section aria-labelledby="en-mlkit-heading">
+          <h2 id="en-mlkit-heading">Photo Background Removal (Android)</h2>
+          <p>This section applies to the Android version only.</p>
+          <p>When you import a photo or logo as a structure, Swipe the Flow removes its background using Google ML Kit subject segmentation. The processing happens on your device and your photos do not leave it.</p>
+          <p>This feature uses a module provided by Google Play services, so the first use may require a network connection to download that module.</p>
+          <p>For diagnostics and usage analytics, ML Kit also sends Google device information (manufacturer, model, OS version), the app package name and version, a diagnostic identifier and per-installation identifiers, performance metrics such as latency, and error codes for feature events. Your photos are not transmitted, and Google states that it does not transfer this data to third parties.</p>
+        </section>
+
         <section aria-labelledby="en-developer-heading">
           <h2 id="en-developer-heading">Developer Data Handling</h2>
           <p>Swipe the Flow does not create user accounts and does not use developer-operated backend services to store user profiles, uploaded content, or account data.</p>
@@ -213,6 +229,14 @@
         <section aria-labelledby="ja-photos-heading">
           <h2 id="ja-photos-heading">写真へのアクセス許可</h2>
           <p>写真やロゴを構造物として読み込むときは、システムの写真選択ツールを使い、利用者が選んだ項目だけがアプリに渡されます。写真ライブラリ全体へのアクセス許可は必要ありません。スクリーンショットや録画した動画を写真ライブラリに直接保存するときには保存の許可を求めることがありますが、許可しなくてもシステムの共有シートから書き出せます。読み込んだ写真とアプリでつくった写真・動画は端末の中で処理され、アプリが外部へアップロードすることはありません。</p>
+        </section>
+
+        <section aria-labelledby="ja-mlkit-heading">
+          <h2 id="ja-mlkit-heading">写真の背景消去 (Android)</h2>
+          <p>このセクションは Android 版にのみ当てはまります。</p>
+          <p>写真やロゴを構造物として読み込むと、Google ML Kit の被写体分離機能が背景を消します。処理は端末の中で行われ、写真が端末の外に出ることはありません。</p>
+          <p>この機能は Google Play サービスが提供するモジュールを使うため、初回の利用時にそのモジュールをダウンロードするためネットワークを使うことがあります。</p>
+          <p>また ML Kit は、診断と利用状況の分析のために、端末情報 (メーカー・機種・OS バージョン)、アプリのパッケージ名とバージョン、診断用の識別子とインストールごとの識別子、遅延などの性能指標、機能のエラーコードを Google に送信します。写真そのものは送信されず、Google はこのデータを第三者へ移転しないと表明しています。</p>
         </section>
 
         <section aria-labelledby="ja-developer-heading">
