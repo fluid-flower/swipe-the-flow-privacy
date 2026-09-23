@@ -66,15 +66,15 @@
         <section aria-labelledby="ko-overview-heading">
           <h2 id="ko-overview-heading">개요</h2>
           <p>Swipe the Flow는 계정 생성이나 로그인을 요구하지 않습니다.</p>
-          <p>개발자는 앱을 위한 계정 시스템, 클라우드 저장소 또는 사용자 데이터베이스를 운영하지 않습니다. Swipe the Flow는 광고 표시를 위해 Google Mobile Ads SDK를 사용합니다. iOS 버전은 이에 더해 중요한 앱 기능과 선택적인 Pro 구매 과정이 의도대로 작동하는지 파악하기 위해 Google Analytics for Firebase를 사용합니다. Android 버전은 제품 분석을 사용하지 않으며, 사진을 구조물로 불러올 때 기기 안에서 Google ML Kit을 사용합니다.</p>
+          <p>개발자는 앱을 위한 계정 시스템, 클라우드 저장소 또는 사용자 데이터베이스를 운영하지 않습니다. Swipe the Flow는 광고 표시를 위해 Google Mobile Ads SDK를 사용합니다. 또한 중요한 앱 기능과 선택적인 Pro 구매 과정이 의도대로 작동하는지 파악하기 위해 Google Analytics for Firebase를 사용합니다. Android 버전은 사진을 구조물로 불러올 때 기기 안에서 Google ML Kit을 사용합니다.</p>
         </section>
 
         <section aria-labelledby="ko-analytics-heading">
           <h2 id="ko-analytics-heading">제품 분석</h2>
-          <p>이 절은 iOS 버전에만 해당합니다. Android 버전은 제품 분석을 사용하지 않습니다.</p>
+          <p>이 절은 iOS와 Android 버전 모두에 해당합니다.</p>
           <p>Swipe the Flow는 이미지 레이어 추가 시도, Pro 안내 화면 표시, 구매 시작, 검증된 구매 완료 등 제한된 제품 이벤트를 측정하기 위해 Google Analytics for Firebase를 사용합니다.</p>
           <p>Google Analytics는 앱 인스턴스 식별자, 제품 상호 작용 이벤트, 구매 완료 이벤트와 마스킹된 IP 주소에서 파생된 대략적인 위치를 처리할 수 있습니다. 앱은 사용자의 사진, 영상, 입력한 텍스트, 이메일 주소, 이름 또는 계정 정보를 Analytics로 전송하지 않습니다.</p>
-          <p>분석 데이터는 앱 사용을 측정하고 제품 기능을 개선하는 목적으로만 사용됩니다. 이 데이터는 사용자의 신원과 연결되지 않으며 앱이나 웹사이트를 넘나들며 사용자를 추적하는 데 사용되지 않습니다. 자동 화면 보고, IDFV 수집, 광고 개인화 신호 및 Analytics의 IDFA 접근은 비활성화되어 있습니다.</p>
+          <p>분석 데이터는 앱 사용을 측정하고 제품 기능을 개선하는 목적으로만 사용됩니다. 이 데이터는 사용자의 신원과 연결되지 않으며 앱이나 웹사이트를 넘나들며 사용자를 추적하는 데 사용되지 않습니다. iOS 버전은 자동 화면 보고, IDFV 수집, 광고 개인화 신호 및 Analytics의 IDFA 접근을 비활성화했고, Android 버전은 Analytics의 광고 ID 수집과 광고 개인화 신호를 비활성화했습니다.</p>
         </section>
 
         <section aria-labelledby="ko-ads-heading">
@@ -106,12 +106,12 @@
 
         <section aria-labelledby="ko-purchases-heading">
           <h2 id="ko-purchases-heading">앱 내 구입</h2>
-          <p>Swipe the Flow는 광고와 워터마크를 제거하고, 더 정밀한 시뮬레이션과 프리미엄 화면 스타일 및 최대 4개의 사진·도형 레이어를 잠금 해제하는 선택적 일회성 앱 내 구입인 “Swipe the Flow Pro”를 제공합니다. 구매는 iOS에서는 App Store를 통해 Apple이, Android에서는 Google Play를 통해 Google이 처리하며 개발자는 결제 정보를 수집하거나 저장하지 않습니다. 검증된 구매 완료는 결제 세부 정보나 계정 정보 없이 제품 분석에 보고될 수 있습니다(iOS 버전에만 해당).</p>
+          <p>Swipe the Flow는 광고와 워터마크를 제거하고, 더 정밀한 시뮬레이션과 프리미엄 화면 스타일 및 최대 8개의 사진·도형 레이어를 잠금 해제하는 선택적 일회성 앱 내 구입인 “Swipe the Flow Pro”를 제공합니다. 구매는 iOS에서는 App Store를 통해 Apple이, Android에서는 Google Play를 통해 Google이 처리하며 개발자는 결제 정보를 수집하거나 저장하지 않습니다. 검증된 구매 완료는 결제 세부 정보나 계정 정보 없이 제품 분석에 보고될 수 있습니다.</p>
         </section>
 
         <section aria-labelledby="ko-third-party-heading">
           <h2 id="ko-third-party-heading">제3자 서비스</h2>
-          <p>Swipe the Flow는 제3자 광고 서비스로 Google Mobile Ads SDK를 사용합니다. iOS 버전은 제품 분석 서비스로 Google Analytics for Firebase를 함께 사용합니다. Android 버전은 사진 배경 지우기에 Google ML Kit을 사용합니다.</p>
+          <p>Swipe the Flow는 제3자 광고 서비스로 Google Mobile Ads SDK를 사용합니다. 제품 분석 서비스로 Google Analytics for Firebase를 함께 사용합니다. Android 버전은 사진 배경 지우기에 Google ML Kit을 사용합니다.</p>
         </section>
 
         <section aria-labelledby="ko-children-heading">
@@ -136,15 +136,15 @@
         <section aria-labelledby="en-overview-heading">
           <h2 id="en-overview-heading">Overview</h2>
           <p>Swipe the Flow does not require account creation or user login.</p>
-          <p>The developer does not operate account systems, cloud storage, or user databases for the app. Swipe the Flow uses Google Mobile Ads SDK to display ads. The iOS version also uses Google Analytics for Firebase to understand whether important app features and the optional Pro purchase flow are working as intended. The Android version does not use product analytics; it uses Google ML Kit on your device when you import a photo as a structure.</p>
+          <p>The developer does not operate account systems, cloud storage, or user databases for the app. Swipe the Flow uses Google Mobile Ads SDK to display ads. It also uses Google Analytics for Firebase to understand whether important app features and the optional Pro purchase flow are working as intended. The Android version uses Google ML Kit on your device when you import a photo as a structure.</p>
         </section>
 
         <section aria-labelledby="en-analytics-heading">
           <h2 id="en-analytics-heading">Product Analytics</h2>
-          <p>This section applies to the iOS version only. The Android version does not use product analytics.</p>
+          <p>This section applies to both the iOS and Android versions.</p>
           <p>Swipe the Flow uses Google Analytics for Firebase to measure a limited set of product events, such as attempts to add another image layer, views of the Pro offer, purchase starts, and verified purchase completions.</p>
           <p>Google Analytics may process an app-instance identifier, product interaction events, purchase completion events, and approximate location derived from a masked IP address. The app does not send your photos, videos, text input, email address, name, or account information to Analytics.</p>
-          <p>Analytics data is used only to measure app usage and improve product features. It is not linked to your identity and is not used to track you across apps or websites. Automatic screen reporting, IDFV collection, advertising-personalization signals, and Analytics access to IDFA are disabled.</p>
+          <p>Analytics data is used only to measure app usage and improve product features. It is not linked to your identity and is not used to track you across apps or websites. The iOS version disables automatic screen reporting, IDFV collection, advertising-personalization signals, and Analytics access to IDFA. The Android version disables Advertising ID collection and advertising-personalization signals in Analytics.</p>
         </section>
 
         <section aria-labelledby="en-ads-heading">
@@ -176,12 +176,12 @@
 
         <section aria-labelledby="en-purchases-heading">
           <h2 id="en-purchases-heading">In-App Purchases</h2>
-          <p>Swipe the Flow offers an optional one-time in-app purchase, "Swipe the Flow Pro," which removes ads and watermarks and unlocks more detailed simulation, premium visual styles, and up to four photo or shape layers. Purchases are processed by Apple through the App Store on iOS, and by Google through Google Play on Android. The developer does not collect or store your payment information. A verified purchase completion may be reported to product analytics without payment details or account information.</p>
+          <p>Swipe the Flow offers an optional one-time in-app purchase, "Swipe the Flow Pro," which removes ads and watermarks and unlocks more detailed simulation, premium visual styles, and up to eight photo or shape layers. Purchases are processed by Apple through the App Store on iOS, and by Google through Google Play on Android. The developer does not collect or store your payment information. A verified purchase completion may be reported to product analytics without payment details or account information.</p>
         </section>
 
         <section aria-labelledby="en-third-party-heading">
           <h2 id="en-third-party-heading">Third-Party Services</h2>
-          <p>Swipe the Flow uses Google Mobile Ads SDK as a third-party advertising service. The iOS version also uses Google Analytics for Firebase as a product analytics service. The Android version uses Google ML Kit for photo background removal.</p>
+          <p>Swipe the Flow uses Google Mobile Ads SDK as a third-party advertising service. It also uses Google Analytics for Firebase as a product analytics service. The Android version uses Google ML Kit for photo background removal.</p>
         </section>
 
         <section aria-labelledby="en-children-heading">
@@ -206,15 +206,15 @@
         <section aria-labelledby="ja-overview-heading">
           <h2 id="ja-overview-heading">概要</h2>
           <p>Swipe the Flow はアカウントの作成やログインを必要としません。</p>
-          <p>開発者はこのアプリのためのアカウントシステム、クラウドストレージ、ユーザーデータベースを運用していません。Swipe the Flow は広告の表示に Google Mobile Ads SDK を使用します。iOS 版はこれに加えて、重要なアプリ機能と任意の Pro 購入の流れが意図どおりに動作しているかを把握するために Google Analytics for Firebase を使用します。Android 版は製品分析を使用せず、写真を構造物として読み込むときに端末の中で Google ML Kit を使用します。</p>
+          <p>開発者はこのアプリのためのアカウントシステム、クラウドストレージ、ユーザーデータベースを運用していません。Swipe the Flow は広告の表示に Google Mobile Ads SDK を使用します。また、重要なアプリ機能と任意の Pro 購入の流れが意図どおりに動作しているかを把握するために Google Analytics for Firebase を使用します。Android 版は、写真を構造物として読み込むときに端末の中で Google ML Kit を使用します。</p>
         </section>
 
         <section aria-labelledby="ja-analytics-heading">
           <h2 id="ja-analytics-heading">製品分析</h2>
-          <p>このセクションは iOS 版にのみ当てはまります。Android 版は製品分析を使用しません。</p>
+          <p>このセクションは iOS 版と Android 版の両方に当てはまります。</p>
           <p>Swipe the Flow は、画像レイヤーの追加操作、Pro 案内画面の表示、購入の開始、確認済みの購入完了など、限られた製品イベントを測定するために Google Analytics for Firebase を使用します。</p>
           <p>Google Analytics は、アプリインスタンス識別子、製品の操作イベント、購入完了イベント、マスクされた IP アドレスから導かれるおおよその位置を処理することがあります。アプリが利用者の写真、動画、入力したテキスト、メールアドレス、氏名、アカウント情報を Analytics へ送信することはありません。</p>
-          <p>分析データはアプリの利用状況を測定し、製品の機能を改善する目的にのみ使用されます。このデータが利用者の身元と結び付けられることはなく、アプリやウェブサイトをまたいで利用者を追跡するために使われることもありません。画面の自動レポート、IDFV の収集、広告のパーソナライズ信号、Analytics からの IDFA へのアクセスは無効にしています。</p>
+          <p>分析データはアプリの利用状況を測定し、製品の機能を改善する目的にのみ使用されます。このデータが利用者の身元と結び付けられることはなく、アプリやウェブサイトをまたいで利用者を追跡するために使われることもありません。iOS 版では画面の自動レポート、IDFV の収集、広告のパーソナライズ信号、Analytics からの IDFA へのアクセスを、Android 版では Analytics による広告 ID の収集と広告のパーソナライズ信号を無効にしています。</p>
         </section>
 
         <section aria-labelledby="ja-ads-heading">
@@ -246,12 +246,12 @@
 
         <section aria-labelledby="ja-purchases-heading">
           <h2 id="ja-purchases-heading">アプリ内購入</h2>
-          <p>Swipe the Flow は、広告とウォーターマークを取り除き、より精細なシミュレーション、特別な画面スタイル、写真・図形レイヤー最大 4 つを解放する、任意の買い切り型アプリ内購入「Swipe the Flow Pro」を提供します。購入は iOS では App Store を通じて Apple が、Android では Google Play を通じて Google が処理し、開発者が決済情報を収集または保存することはありません。確認済みの購入完了は、決済の詳細やアカウント情報を含まない形で製品分析に報告されることがあります (iOS 版のみ)。</p>
+          <p>Swipe the Flow は、広告とウォーターマークを取り除き、より精細なシミュレーション、特別な画面スタイル、写真・図形レイヤー最大 8 つを解放する、任意の買い切り型アプリ内購入「Swipe the Flow Pro」を提供します。購入は iOS では App Store を通じて Apple が、Android では Google Play を通じて Google が処理し、開発者が決済情報を収集または保存することはありません。確認済みの購入完了は、決済の詳細やアカウント情報を含まない形で製品分析に報告されることがあります。</p>
         </section>
 
         <section aria-labelledby="ja-third-party-heading">
           <h2 id="ja-third-party-heading">サードパーティのサービス</h2>
-          <p>Swipe the Flow は、サードパーティの広告サービスとして Google Mobile Ads SDK を使用します。iOS 版は製品分析サービスとして Google Analytics for Firebase も使用します。Android 版は写真の背景消去に Google ML Kit を使用します。</p>
+          <p>Swipe the Flow は、サードパーティの広告サービスとして Google Mobile Ads SDK を使用します。製品分析サービスとして Google Analytics for Firebase も使用します。Android 版は写真の背景消去に Google ML Kit を使用します。</p>
         </section>
 
         <section aria-labelledby="ja-children-heading">
